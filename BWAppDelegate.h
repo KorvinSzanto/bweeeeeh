@@ -1,7 +1,8 @@
-#import <Cocoa/Cocoa.h>
+#import <Foundation/Foundation.h>
+#import <AppKit/AppKit.h>
 
-@interface BWAppDelegate : NSObject <NSApplicationDelegate>
+@interface BWAppDelegate : NSObject
 
-@property (retain, nonatomic) NSWindow *window;
+@property (strong, nonatomic) NSWindow *window;
 
 @end

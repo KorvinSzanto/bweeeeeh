@@ -61,8 +61,6 @@
 
 - (BOOL) applicationShouldTerminateAfterLastWindowClosed: (NSApplication *)sender
 {
-	printf("Hey you\n");
-NSLog(@"SDASDA");
 	return YES;
 }
 

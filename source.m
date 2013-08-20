@@ -9,7 +9,6 @@
 - (void) createWindow;
 - (void) playBweeeeeh: (id)sender;
 - (void) applicationWillFinishLaunching: (NSNotification *)not;
-- (void) applicationDidFinishLaunching: (NSNotification *)not;
 - (BOOL) applicationShouldTerminateAfterLastWindowClosed: (NSApplication *)sender;
 @end
 
@@ -52,11 +51,6 @@
 - (void) applicationWillFinishLaunching: (NSNotification *)not;
 {
 	[self createWindow];
-}
-
-- (void) applicationDidFinishLaunching: (NSNotification *)not;
-{
-	[mainWindow makeKeyAndOrderFront: nil];
 }
 
 - (BOOL) applicationShouldTerminateAfterLastWindowClosed: (NSApplication *)sender

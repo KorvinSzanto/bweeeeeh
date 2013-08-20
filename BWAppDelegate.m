@@ -11,7 +11,7 @@
 }
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
-    NSButton *button = [[NSButton alloc] initWithFrame:CGRectMake(10, 10, 50, 30)];
+    NSButton *button = [[[NSButton alloc] initWithFrame:CGRectMake(10, 10, 50, 30)] autorelease];
     button.title = @"Bweeh";
     button.target = self;
     button.action = @selector(buttonPressed:);
